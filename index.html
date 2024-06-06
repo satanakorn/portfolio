@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css"> 
+    <title>Portfolio</title>
+
+</head>
+<body>
+<nav id="desktop-nav">
+    <div class="logo">Welcome...</div>
+    <div>
+        <ul class="nav-link">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="theme-toggle" class="theme-toggle">
+              <img src="./asset/moon.png" alt="Toggle Dark Mode" id="theme-icon">
+          </button></li>
+        </ul>
+    </div>
+</nav>
+
+<nav id="hamburger-nav">
+  <div class="logo">owen</div>
+  <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="togglemenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <div class="menu-link">
+          <ul>
+              <li><a href="#about" onclick="togglemenu()">about</a></li>
+              <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+              <li><a href="#skill" onclick="togglemenu()">Skill</a></li>
+              <li><a href="#projects" onclick="togglemenu()">Project</a></li>
+              <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+<section id="profile" class="fade-in-section">
+  <div class="section__pic-container">
+      <img src="./asset/profile.jpg" alt="Owen profile picture">
+  </div>
+
+  <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Mr. Sathanakon Bunphim</h1>
+      <p class="section__text_p2">Fullstack Developer</p>
+
+      <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./asset/resume-example.pdf')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href = ('./#contact')">Contact Info</button>
+      </div>
+  </div>
+</section>
+
+
+<section id="about" class="fade-in-section">
+    <h1 class="title">About Me</h1>
+
+    <div class="section-container">
+        <div class="about-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <img src="./asset/education.png" alt="Education icon" class="icon">
+                    <h3>Current Education</h3>
+                    <p>Year 2 of Computer Engineering <br> King Mongkut's University of Technology Thonburi</p>
+                </div>
+            </div>
+
+            <div class="text-container">
+                <p>
+                    I'm someone deeply intrigued by the intricacies of technology and the boundless possibilities it offers. Coding isn't just a skill to me; it's a gateway to creativity, problem-solving, and making a tangible impact in the digital realm. With an eagerness to learn and a passion for innovation, I'm seizing the opportunity to immerse myself in coding through programs like CoderCamp. As I embark on this journey to become a junior programmer, I embrace the challenges ahead with enthusiasm, knowing that each line of code I write is a step towards realizing my potential and shaping the world around me.
+                </p>
+            </div>
+        </div>
+
+        <div class="section__pic-container">
+            <img src="./asset/about-pic.jpg" alt="Profile picture" class="about-pic">
+        </div>
+    </div>
+
+    <img src="./asset/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href = './#experience'">
+</section>
+
+
+  
+
+<section id="experience" class="fade-in-section">
+<p class="section__text__p1">Explore My</p>
+<h1 class="title">Experience & Activity</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="experience-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Frontend Developer</h2>
+                        <div class="article-container">
+                            <div class="article">
+                                <img src="./asset/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </div>
+                            <!-- Add more articles as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="experience-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Backend Developer</h2>
+                        <div class="article-container">
+                            <div class="article">
+                                <img src="./asset/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>Django Framework</h3>
+                                    <p>Expert</p>
+                                </div>
+                            </div>
+                            <!-- Add more articles as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<img src="./asset/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href = './#projects'">
+</section>
+
+
+<section id="projects" class="fade-in-section">
+<p class="section__text__p1">Browse My Recent</p>
+<h1 class="title">Projects</h1>
+<div class="experience-details-container">
+  <div class="about-container">
+    <div class="row">
+      <!-- Project One -->
+      <div class="col-md-4">
+        <div id="project1Carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="color-container details-container">
+                <div class="article-container">
+                  <img src="./asset/project1_1.png" alt="Project 1" class="d-block w-100 project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">covid-19 share</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, architecto?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Two -->
+      <div class="col-md-4">
+        <div id="project2Carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="color-container details-container">
+                <div class="article-container">
+                  <img src="./asset/gamescan.png" alt="Project 2" class="d-block w-100 project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Game scan for paarent</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, dignissimos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Three -->
+      <div class="col-md-4">
+        <div id="project3Carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="color-container details-container">
+                <div class="article-container">
+                  <img src="./asset/rc_hack.png" alt="Project 3" class="d-block w-100 project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Rc hackathon</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, perspiciatis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div id="project3Carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="color-container details-container">
+                <div class="article-container">
+                  <img src="./asset/shopping.png" alt="Project 3" class="d-block w-100 project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">40 Degree shop</h2>
+                <p>Description for Project 3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div id="project3Carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="color-container details-container">
+                <div class="article-container">
+                  <img src="./asset/rc_hack.png" alt="Project 3" class="d-block w-100 project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">DIY room</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, accusamus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div id="project3Carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="color-container details-container">
+                <div class="article-container">
+                  <img src="./asset/rc_hack.png" alt="Project 3" class="d-block w-100 project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Rc hackathon</h2>
+                <p>Description for Project 3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+    </div>
+  </div>
+</div>
+<img src="./asset/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href = './#skill'">
+</section>
+
+
+
+  <section id="skill" class="fade-in-section">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+
+    <div class="container">
+        <div class="skill-category">
+            <h2>Front End</h2>
+            <div class="skill-list">
+                <div class="skill-item">
+                    <img src="./asset/html.png" alt="HTML icon" class="icon">
+                    <h3>HTML</h3>
+                    <p>Basic</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/css-3.png" alt="CSS icon" class="icon">
+                    <h3>CSS</h3>
+                    <p>Basic</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/java-script.png" alt="JavaScript icon" class="icon">
+                    <h3>JavaScript</h3>
+                    <p>Basic</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/bootstrap.png" alt="Bootstrap icon" class="icon">
+                    <h3>Bootstrap</h3>
+                    <p>Basic</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/atom.png" alt="React icon" class="icon">
+                    <h3>React.js</h3>
+                    <p>Basic</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/vuejs.png" alt="Vue icon" class="icon">
+                    <h3>Vue.js</h3>
+                    <p>Basic</p>
+                </div>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h2>Back End</h2>
+            <div class="skill-list">
+                <div class="skill-item">
+                    <img src="./asset/django.png" alt="Django icon" class="icon">
+                    <h3>Django</h3>
+                    <p>Expert</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/checkmark.png" alt="Flask icon" class="icon">
+                    <h3>Flask</h3>
+                    <p>Expert</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/php.png" alt="PHP icon" class="icon">
+                    <h3>PHP</h3>
+                    <p>Basic</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/mysql.png" alt="MySQL icon" class="icon">
+                    <h3>MySQL</h3>
+                    <p>Basic</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/elephant.png" alt="PostgreSQL icon" class="icon">
+                    <h3>PostgreSQL</h3>
+                    <p>Basic</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/database.png" alt="MongoDB icon" class="icon">
+                    <h3>MongoDB</h3>
+                    <p>Basic</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="./asset/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href = './#contact'">
+</section>
+
+
+<section id="contact" class="fade-in-section">
+  <h1 class="title">Contact Me</h1>
+
+  <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+          <img src="./asset/email.png" alt="email icon" class="icon contact-icon email-icon">
+          <a href="mailto:examplemail@gmail.com">Example@mail.com</a>
+      </div>
+
+      <div class="contact-info-container">
+        <img src="./asset/github.png" alt="GitHub icon" class="icon contact-icon">
+        <a href="https://github.com" target="_blank">GitHub</a>
+    </div>
+
+      <div class="contact-info-container">
+          <img src="./asset/ig.png" alt="Instagram icon" class="icon contact-icon">
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+      </div>
+
+      <div class="contact-info-container">
+        <img src="./asset/faceboo.png" alt="Instagram icon" class="icon contact-icon">
+        <a href="https://web.facebook.com/profile.php?id=100010698094458" target="_blank">Facebook</a>
+    </div>
+
+
+  </div>
+
+  
+</section>
+
+
+
+  <footer>
+    <nav>
+      <div class="nav-link-container">
+        <ul class="nav-link">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#skill">Skill</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+      </div>
+    </nav>
+    <p>copyright &#169; Owen</p>
+  </footer>
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
