@@ -19,6 +19,8 @@
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Project</a></li>
             <li><a href="#skill">Skill</a></li>
+
+            <li><a href="#certificate">Certificate</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><button id="theme-toggle" class="theme-toggle">
               <img src="./asset/moon.png" alt="Toggle Dark Mode" id="theme-icon">
@@ -56,7 +58,7 @@
   <div class="section__text">
       <p class="section__text__p1">Hello, I'm</p>
       <h1 class="title">Mr. Sathanakon Bunphim</h1>
-      <p class="section__text_p2">Fullstack Developer</p>
+      <p class="section__text_p2">interest in full stack web development. </p>
 
       <div class="btn-container">
           <button class="btn btn-color-2" onclick="window.open('./asset/resume-example.pdf')">Download CV</button>
@@ -94,172 +96,185 @@
     <img src="./asset/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href = './#experience'">
 </section>
 
-
+<section id="experience" class="fade-in-section">
+  <div class="container">
+    <div class="text-center">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience & Activity</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 mb-4">
+          <div id="experienceCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <div class="color-container details-container">
+                          <div class="article-container">
+                              <img src="./asset/cordercamp.jpg" alt="Codercamp 6 month" class="d-block w-100 project-img">
+                          </div>
+                          <h2 class="experience-sub-title project-title">Codercamp 6 month</h2>
+                          <p>Participated in a six-month intensive training program focused on Personal and Professional Development, Algorithm and Data Structures, CS’50 Self Learning, JAVA Operating/Lab, System Analysis and Design, Database, Adobe XD for Mobile App, and English for Communication.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
   
 
-<section id="experience" class="fade-in-section">
-<p class="section__text__p1">Explore My</p>
-<h1 class="title">Experience & Activity</h1>
+     
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="experience-details-container">
-                <div class="about-container">
-                    <div class="details-container">
-                        <h2 class="experience-sub-title">Frontend Developer</h2>
-                        <div class="article-container">
-                            <div class="article">
-                                <img src="./asset/checkmark.png" alt="Experience icon" class="icon">
-                                <div>
-                                    <h3>HTML</h3>
-                                    <p>Basic</p>
-                                </div>
-                            </div>
-                            <!-- Add more articles as needed -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="experience-details-container">
-                <div class="about-container">
-                    <div class="details-container">
-                        <h2 class="experience-sub-title">Backend Developer</h2>
-                        <div class="article-container">
-                            <div class="article">
-                                <img src="./asset/checkmark.png" alt="Experience icon" class="icon">
-                                <div>
-                                    <h3>Django Framework</h3>
-                                    <p>Expert</p>
-                                </div>
-                            </div>
-                            <!-- Add more articles as needed -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="text-center">
+      <img src="./asset/arrow.png" alt="Arrow icon" class="icon arrow mt-4" onclick="location.href = './#projects'">
     </div>
-</div>
-
-<img src="./asset/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href = './#projects'">
+  </div>
 </section>
+
 
 
 <section id="projects" class="fade-in-section">
-<p class="section__text__p1">Browse My Recent</p>
-<h1 class="title">Projects</h1>
-<div class="experience-details-container">
-  <div class="about-container">
-    <div class="row">
-      <!-- Project One -->
-      <div class="col-md-4">
-        <div id="project1Carousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="color-container details-container">
-                <div class="article-container">
-                  <img src="./asset/project1_1.png" alt="Project 1" class="d-block w-100 project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">covid-19 share</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, architecto?</p>
+  <div class="container text-center">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="row">
+          <!-- Project One -->
+          <div class="col-md-4 col-sm-6 mb-4">
+              <div id="project1Carousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="color-container details-container">
+                              <div class="article-container">
+                                  <img src="./asset/project1_1.png" alt="Project 1" class="d-block w-100 project-img">
+                              </div>
+                              <h2 class="experience-sub-title project-title">Covid-19 Share information</h2>
+                              <p>final project fo cs50 , Developed a web application to share and access up-to-date information about Covid-19, Utilized HTML, CSS, JavaScript for front-end development
+                              </p>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
-      </div>
 
-      <!-- Project Two -->
-      <div class="col-md-4">
-        <div id="project2Carousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="color-container details-container">
-                <div class="article-container">
-                  <img src="./asset/gamescan.png" alt="Project 2" class="d-block w-100 project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Game scan for paarent</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, dignissimos.</p>
+          <!-- Project Two -->
+          <div class="col-md-4 col-sm-6 mb-4">
+              <div id="project2Carousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="color-container details-container">
+                              <div class="article-container">
+                                  <img src="./asset/gamescan.png" alt="Project 2" class="d-block w-100 project-img">
+                              </div>
+                              <h2 class="experience-sub-title project-title">Game Scan for Parents</h2>
+                              <p>Codercamp's final project: a parent-oriented web app for reviewing video game content. Includes a search function for detailed game info to help parents make informed decisions.</p>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
-      </div>
 
-      <!-- Project Three -->
-      <div class="col-md-4">
-        <div id="project3Carousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="color-container details-container">
-                <div class="article-container">
-                  <img src="./asset/rc_hack.png" alt="Project 3" class="d-block w-100 project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Rc hackathon</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, perspiciatis.</p>
+          <!-- Project Three -->
+          <div class="col-md-4 col-sm-6 mb-4">
+              <div id="project3Carousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="color-container details-container">
+                              <div class="article-container">
+                                  <img src="./asset/rc_hack.png" alt="Project 3" class="d-block w-100 project-img">
+                              </div>
+                              <h2 class="experience-sub-title project-title">RC Hackathon</h2>
+                              <p>
+                                Led by the Coding and Robotics Club president, developed a web app for university hackathons. Encourages student participation and Python skill enhancement.</p>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
-      </div>
 
-      <div class="col-md-4">
-        <div id="project3Carousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="color-container details-container">
-                <div class="article-container">
-                  <img src="./asset/shopping.png" alt="Project 3" class="d-block w-100 project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">40 Degree shop</h2>
-                <p>Description for Project 3</p>
+          <!-- Project Four -->
+          <div class="col-md-4 col-sm-6 mb-4">
+              <div id="project4Carousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="color-container details-container">
+                              <div class="article-container">
+                                  <img src="./asset/shopping.png" alt="Project 4" class="d-block w-100 project-img">
+                              </div>
+                              <h2 class="experience-sub-title project-title">40 Degree Shop</h2>
+                              <p>Created an online shopping web app using MySQL for database management. Handles product listings, user accounts, orders, and inventory.</p>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
-      </div>
 
-      <div class="col-md-4">
-        <div id="project3Carousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="color-container details-container">
-                <div class="article-container">
-                  <img src="./asset/rc_hack.png" alt="Project 3" class="d-block w-100 project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">DIY room</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, accusamus.</p>
+          <!-- Project Five -->
+          <div class="col-md-4 col-sm-6 mb-4">
+              <div id="project5Carousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="color-container details-container">
+                              <div class="article-container">
+                                  <img src="./asset/DIY.png" alt="Project 5" class="d-block w-100 project-img">
+                              </div>
+                              <h2 class="experience-sub-title project-title">DIY Room</h2>
+                              <p>Crafted a web app for DIY enthusiasts to register and access a DIY Room for diverse design projects.</p>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
+
+          <!-- Project Six -->
+        
       </div>
-
-      <div class="col-md-4">
-        <div id="project3Carousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="color-container details-container">
-                <div class="article-container">
-                  <img src="./asset/rc_hack.png" alt="Project 3" class="d-block w-100 project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Rc hackathon</h2>
-                <p>Description for Project 3</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      
-
-    </div>
+      <img src="./asset/arrow.png" alt="Arrow icon" class="icon arrow mt-4" onclick="location.href = './#certificate'">
   </div>
-</div>
-<img src="./asset/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href = './#skill'">
 </section>
+
+<section id="certificate" class="fade-in-section">
+  <div class="container text-center">
+      <h1 class="title">Certificates</h1>
+      <div class="row">
+          <!-- Certificate One -->
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div id="certificateCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="color-container details-container">
+                              <img src="./asset/certificate_cs50.jpg" class="card-img-top" alt="Certificate 1">
+                              <div class="card-body">
+                                  <h5 class="card-title">cs50 certificate</h5>
+                                  <p class="card-text">on completion of CS50x, including ten problem sets, ten labs, and one final project. Awarded from Cambridge, Massachusetts, in the year two thousand twenty-one</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Certificate Two -->
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div id="certificateCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="color-container details-container">
+                              <img src="./asset/finalproject.png" class="card-img-top" alt="Certificate 2">
+                              <div class="card-body">
+                                  <h5 class="card-title">STEM Career Academies certificate of Final project</h5>
+                                  <p class="card-text">created web application Game scan for parent</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Add more certificates as needed -->
+      </div>
+      <img src="./asset/arrow.png" alt="Arrow icon" class="icon arrow mt-4" onclick="location.href = './#skill'">
+  </div>
+</section>
+
+
 
 
 
@@ -338,6 +353,7 @@
                 </div>
             </div>
         </div>
+        
     </div>
     <img src="./asset/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href = './#contact'">
 </section>
@@ -349,17 +365,19 @@
   <div class="contact-info-upper-container">
       <div class="contact-info-container">
           <img src="./asset/email.png" alt="email icon" class="icon contact-icon email-icon">
-          <a href="mailto:examplemail@gmail.com">Example@mail.com</a>
+          <a href="mailto:satanakornbunpim@gmail.com
+">satanakornbunpim@gmail.com
+          </a>
       </div>
 
       <div class="contact-info-container">
         <img src="./asset/github.png" alt="GitHub icon" class="icon contact-icon">
-        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://github.com/satanakorn" target="_blank">GitHub</a>
     </div>
 
       <div class="contact-info-container">
           <img src="./asset/ig.png" alt="Instagram icon" class="icon contact-icon">
-          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+          <a href="https://www.instagram.com/str_owen/" target="_blank">Instagram</a>
       </div>
 
       <div class="contact-info-container">
@@ -367,6 +385,10 @@
         <a href="https://web.facebook.com/profile.php?id=100010698094458" target="_blank">Facebook</a>
     </div>
 
+    <div class="contact-info-container">
+      <img src="./asset/youtube.png" alt="Instagram icon" class="icon contact-icon">
+      <a href="https://www.youtube.com/channel/UCy0rfWGU8hEDtTc_ETCT2iA" target="_blank">YouTube</a>
+  </div>
 
   </div>
 

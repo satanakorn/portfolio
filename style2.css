@@ -1,114 +1,139 @@
-@media screen and (max-width: 1400px) {
-    #profile {
-        height: 83vh;
-        margin-bottom: 6rem;
+/* Responsive Styles */
 
-    }
 
-    .about-container { 
-        flex-wrap: wrap;
-        
-    }
-}
 
-@media screen and (max-width: 1200px) {
-    #desktop-nav { 
+@media (max-width: 768px) {
+    #desktop-nav {
         display: none;
     }
-    #hamburger-nav { 
+
+    #hamburger-nav {
         display: flex;
     }
 
-    #experience, .experience-details-container  {
-        margin-top: 2rem;
+    .hamburger-menu {
+        position: relative;
+    }
 
-     }
-     #profile , .section-container { 
+    .hamburger-icon {
+        cursor: pointer;
+    }
+
+    .hamburger-icon.active span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 8px;
+    }
+
+    .hamburger-icon.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-icon.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: -8px;
+    }
+
+    .hamburger-icon span {
+        background-color: #000;
+        border-radius: 2px;
         display: block;
-     }
-
-     .arrow { 
-        display: none;
-     }
-     .section, .section-container { 
-        height: fit-content;
-     }
-
-     section { 
-        margin: 0 5%;
-     }
-     .section__pic-container { 
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
-     }
-
-     .about-container { 
-        margin-top: 0;
-     }
-}
-
-@media screen and (max-width: 600) {
-    #contact , footer { 
-        height: 40vh;
-
+        height: 2px;
+        margin: 5px 0;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        width: 25px;
     }
 
-    #profile { 
-        height: 83vh;
-        margin-bottom: 0;
+    .menu-link {
+        background: rgba(0, 0, 0, 0.8);
+        height: 100vh;
+        left: -100%;
+        position: absolute;
+        top: 0;
+        transition: left 0.3s ease-in-out;
+        width: 100%;
     }
 
-    article { 
-        font-size: 1rem;
+    .menu-link.active {
+        left: 0;
     }
 
-    footer nav{
-        height: fit-content;
-        margin-bottom: 2rem;
-    }
-
-    .about-container, .contact-info-upper-container, .btn-container  { 
-        flex-wrap: wrap;
-
-    }
-
-    .contact-info-container { 
-        margin: 0;
-    }
-
-    .contact-info-container p, .nav-link li a { 
-        font-size: 1rem;
-    }
-    .experience-sub-title { 
-        font-size: 1.25rem;
-    }
-
-    .logo { 
-        font-size: 1.5rem;
-    }
-
-    .nav-link { 
+    .menu-link ul {
+        display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        justify-content: center;
+        height: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
         text-align: center;
     }
 
-    .section__pic-container { 
-        width: auto;
-        height: 46vw;
-        justify-content: center;
-    }
-    .section__text__p2 { 
-        font-size: 1.25rem;
+    .menu-link ul li {
+        margin: 20px 0;
     }
 
-    .title { 
-        font-size: 2rem;
+    .menu-link ul li a {
+        color: #fff;
+        font-size: 24px;
+        text-decoration: none;
     }
 
-    .text-container { 
-        text-align: justify;
+    .section__pic-container img, 
+    .section-container img {
+        width: 100%;
+        height: auto;
     }
 
+    .section-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-details-container {
+        flex-direction: column;
+    }
+
+    .experience-details-container {
+        padding: 10px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .contact-details-container {
+        flex-direction: column;
+    }
+
+    .form-container, .contact-text-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 769px) {
+    #desktop-nav {
+        display: flex;
+    }
+
+    #hamburger-nav {
+        display: none;
+    }
 }
