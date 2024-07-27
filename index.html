@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-light bg-light fade-in-section">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="logo">Hello world...</div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skill">Skill</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificate">Certificate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <button id="theme-toggle" class="btn btn-link theme-toggle" aria-label="Toggle Dark Mode">
+                            <img src="./asset/moon.png" alt="Toggle Dark Mode" id="theme-icon" class="theme-icon">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+
+<section id="profile" class="fade-in-section text-center">
+    <div class="section__pic-container mb-4">
+        <img src="./asset/profile.jpg" alt="Owen profile picture" class="img-fluid rounded-circle">
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mr. Sathanakon Bunphim</h1>
+        <p class="section__text_p2">Interest in web development</p>
+        <div class="btn-container mt-4">
+            <button class="btn btn-primary" onclick="window.open('./asset/resume-example.pdf')">Download CV</button>
+            <button class="btn btn-secondary" onclick="location.href = ('./#contact')">Contact Info</button>
+        </div>
+    </div>
+  </section>
+  
+  
+<section id="about" class="fade-in-section">
+    <h1 class="title text-center">About Me</h1>
+    <div class="section-container">
+        <div class="about-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <img src="./asset/education.png" alt="Education icon" class="icon">
+                    <h3>Current Education</h3>
+                    <p>Year 3 of Computer Engineering <br> King Mongkut's University of Technology Thonburi</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>
+                    Hello! I’m owen, a passionate web developer with a keen interest in creating dynamic and responsive web applications. My journey into web development started when I realized the power of the internet and its ability to connect people and ideas across the globe.
+                </p>
+            </div>
+        </div>
+        <div class="section__pic-container">
+            <img src="./asset/about-pic.jpg" alt="Profile picture" class="about-pic img-fluid">
+        </div>
+    </div>
+</section>
+
+
+<section id="experience" class="fade-in-section">
+    <div class="container">
+        <div class="text-center">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Experience & Activity</h1>
+        </div>
+        
+
+
+        <div class="row">
+            <div class="col-lg-12 mb-4">
+                <div id="experienceCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="color-container details-container">
+                                <div class="article-container">
+                                    <img src="./asset/cordercamp.jpg" alt="Codercamp 6 month" class="d-block w-100 project-img">
+                                </div>
+                                <h2 class="experience-sub-title project-title">Codercamp 6 Month</h2>
+                                <p>Participated in a six-month intensive training program focused on Personal and Professional Development, Algorithm and Data Structures, CS’50 Self Learning, JAVA Operating/Lab, System Analysis and Design, Database, Adobe XD for Mobile App, and English for Communication.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="color-container details-container">
+                                <div class="article-container">
+                                    <img src="./asset/hackathon.jpg" alt="Another Experience" class="d-block w-100 project-img">
+                                </div>
+                                <h2 class="experience-sub-title project-title">Makathon Next Gen</h2>
+                                <p>Our team made it to the top 15 out of 70 participating teams in the Makathon Next Gen competition.</p>
+                                
+                            </div>
+                        </div>
+                       
+
+                    <a class="carousel-control-prev" href="#experienceCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#experienceCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="projects" class="fade-in-section">
+    <div class="container text-center">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="row">
+            <!-- Project One -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div id="project1Carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="color-container details-container">
+                                <div class="article-container">
+                                    <img src="./asset/project1_1.png" alt="Project 1" class="d-block w-100 project-img">
+                                </div>
+                                <h2 class="experience-sub-title project-title">Covid-19 Share information</h2>
+                                <p>Final project for CS50, developed a web application to share and access up-to-date information about Covid-19, utilized HTML, CSS, JavaScript for front-end development.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            <!-- Project Two -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div id="project2Carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="color-container details-container">
+                                <div class="article-container">
+                                    <img src="./asset/gamescan.png" alt="Project 2" class="d-block w-100 project-img">
+                                </div>
+                                <h2 class="experience-sub-title project-title">Game Scan for Parents</h2>
+                                <p>Codercamp's final project: a parent-oriented web app for reviewing video game content. Includes a search function for detailed game info to help parents make informed decisions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            <!-- Project Three -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div id="project3Carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="color-container details-container">
+                                <div class="article-container">
+                                    <img src="./asset/rc_hack.png" alt="Project 3" class="d-block w-100 project-img">
+                                </div>
+                                <h2 class="experience-sub-title project-title">RC Hackathon</h2>
+                                <p>Led by the Coding and Robotics Club president, developed a web app for university hackathons. Encourages student participation and Python skill enhancement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            <!-- Project Four -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div id="project4Carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="color-container details-container">
+                                <div class="article-container">
+                                    <img src="./asset/shopping.png" alt="Project 4" class="d-block w-100 project-img">
+                                </div>
+                                <h2 class="experience-sub-title project-title">40 Degree Shop</h2>
+                                <p> 40 Degree Shop project is an online shopping web app using MySQL for database management, allowing users to browse products, create accounts, place orders, and manage inventory</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            <!-- Project Five -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div id="project5Carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="color-container details-container">
+                                <div class="article-container">
+                                    <img src="./asset/DIY.png" alt="Project 5" class="d-block w-100 project-img">
+                                </div>
+                                <h2 class="experience-sub-title project-title">DIY Room</h2>
+                                <p>DIY Room project is a web app for DIY enthusiasts to register, manage, and showcase design projects. It features user registration, project management, and community engagement</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div id="project5Carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="color-container details-container">
+                                <div class="article-container">
+                                    <img src="./asset/project_library.png" alt="Project 5" class="d-block w-100 project-img">
+                                </div>
+                                <h2 class="experience-sub-title project-title">Library system</h2>
+                                <p>library management system is a Flask web app for managing book borrowing and returns, featuring user registration, an admin dashboard, and a responsive design with MySQL and SQLAlchemy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div id="project5Carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="color-container details-container">
+                                <div class="article-container">
+                                    <img src="./asset/flashcard.png" alt="Project 5" class="d-block w-100 project-img">
+                                </div>
+                                <h2 class="experience-sub-title project-title">flashcard web</h2>
+                                <p>flashcard web project is a responsive website that displays flashcards with audio playback and example sentences</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div id="project5Carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="color-container details-container">
+                                <div class="article-container">
+                                    <img src="./asset/dividend_web.png" alt="Project 5" class="d-block w-100 project-img">
+                                </div>
+                                <h2 class="experience-sub-title project-title">dividend web</h2>
+                                <p>dividend web project tracks and displays information about dividend payments from companies, featuring a responsive design for easy user access</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div id="project5Carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="color-container details-container">
+                                <div class="article-container">
+                                    <img src="./asset/businessaRoom.png" alt="Project 5" class="d-block w-100 project-img">
+                                </div>
+                                <h2 class="experience-sub-title project-title">Business Appointment Room</h2>
+                                <p> Business Appointment Room project is a web app for managing business appointments, allowing users to schedule, track, and manage appointments efficiently</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            <!-- Project Six -->
+            <!-- Add more projects as needed -->
+        </div>
+    </div>
+  </section>
+  
+  <section id="certificate" class="fade-in-section">
+    <div class="container text-center">
+        <h1 class="title">Certificates</h1>
+        <div class="row">
+            <!-- Certificate One -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div id="certificateCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="color-container details-container">
+                                <img src="./asset/certificate_cs50.jpg" class="card-img-top" alt="Certificate 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">CS50 Certificate</h5>
+                                    <p class="card-text">On completion of CS50x, including ten problem sets, ten labs, and one final project. Awarded from Cambridge, Massachusetts, in the year two thousand twenty-one.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            <!-- Certificate Two -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div id="certificateCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="color-container details-container">
+                                <img src="./asset/finalproject.png" class="card-img-top" alt="Certificate 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">STEM Career Academies Certificate of Final Project</h5>
+                                    <p class="card-text">Created web application Game Scan for Parents.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div id="certificateCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="color-container details-container">
+                                <img src="./asset/pearsonnew.png" class="card-img-top" alt="Certificate 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">pearson srf btec level 5 diploma</h5>
+                                    <p class="card-text">The Pearson SRF BTEC Level 5 Diploma in Software Development is a vocational qualification that provides practical skills in programming, software engineering, and project management for various roles in the software industry</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </section>
+  
+
+
+  <section id="skill" class="fade-in-section">
+    <p class="section__text__p1 text-center">Explore My</p>
+    <h1 class="title text-center">Skills</h1>
+
+    <div class="container">
+        <div class="skill-category">
+            <h2>Front End</h2>
+            <div class="skill-list">
+                <div class="skill-item">
+                    <img src="./asset/html.png" alt="HTML icon" class="icon">
+                    <h3>HTML</h3>
+                    <p>intermediate</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/css-3.png" alt="CSS icon" class="icon">
+                    <h3>CSS</h3>
+                    <p>intermediate</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/java-script.png" alt="JavaScript icon" class="icon">
+                    <h3>JavaScript</h3>
+                    <p>Basic</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/bootstrap.png" alt="Bootstrap icon" class="icon">
+                    <h3>Bootstrap</h3>
+                    <p>intermediate</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/atom.png" alt="React icon" class="icon">
+                    <h3>React.js</h3>
+                    <p>Basic</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/vuejs.png" alt="Vue icon" class="icon">
+                    <h3>Vue.js</h3>
+                    <p>Basic</p>
+                </div>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h2>Back End</h2>
+            <div class="skill-list">
+                <div class="skill-item">
+                    <img src="./asset/django.png" alt="Django icon" class="icon">
+                    <h3>Django</h3>
+                    <p>intermediate</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/checkmark.png" alt="Flask icon" class="icon">
+                    <h3>Flask</h3>
+                    <p>intermediate</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/php.png" alt="PHP icon" class="icon">
+                    <h3>PHP</h3>
+                    <p>Basic</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/go.png" alt="Golang icon" class="icon">
+                    <h3>Golang</h3>
+                    <p>Basic</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/node-js.png   " alt="Golang icon" class="icon">
+                    <h3>Node js</h3>
+                    <p>Basic</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/mysql.png" alt="MySQL icon" class="icon">
+                    <h3>MySQL</h3>
+                    <p>intermediate</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/elephant.png" alt="PostgreSQL icon" class="icon">
+                    <h3>PostgreSQL</h3>
+                    <p>Basic</p>
+                </div>
+            
+            </div>
+        </div>
+        <div class="skill-category">
+            <h2>tool</h2>
+            <div class="skill-list">
+                <div class="skill-item">
+                    <img src="./asset/visual-studio-code.png" alt="Django icon" class="icon">
+                    <h3>Vistual studio code</h3>
+                    <p>Expert</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/git.png" alt="git icon" class="icon">
+                    <h3>Git</h3>
+                    <p>intermediate</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/postman.png" alt="postman icon" class="icon">
+                    <h3>Postman</h3>
+                    <p>Basic</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/excel.png" alt="excel icon" class="icon">
+                    <h3>Excel</h3>
+                    <p>Basic</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/beaver-mammal-animal-shape.png" alt="PostgreSQL icon" class="icon">
+                    <h3>Dbeaver</h3>
+                    <p>Basic</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./asset/docker.png" alt="PostgreSQL icon" class="icon">
+                    <h3>Docker</h3>
+                    <p>Basic</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="fade-in-section">
+    <h1 class="title text-center">Contact Me</h1>
+  
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./asset/email.png" alt="email icon" class="icon contact-icon email-icon">
+            <a href="mailto:satanakornbunpim@gmail.com">satanakornbunpim@gmail.com</a>
+        </div>
+  
+        <div class="contact-info-container">
+          <img src="./asset/github.png" alt="GitHub icon" class="icon contact-icon">
+          <a href="https://github.com/satanakorn" target="_blank">GitHub</a>
+      </div>
+  
+        <div class="contact-info-container">
+            <img src="./asset/ig.png" alt="Instagram icon" class="icon contact-icon">
+            <a href="https://www.instagram.com/str_owen/" target="_blank">Instagram</a>
+        </div>
+  
+        <div class="contact-info-container">
+          <img src="./asset/faceboo.png" alt="Facebook icon" class="icon contact-icon">
+          <a href="https://web.facebook.com/profile.php?id=100010698094458" target="_blank">Facebook</a>
+      </div>
+  
+        <div class="contact-info-container">
+            <img src="./asset/youtube.png" alt="YouTube icon" class="icon contact-icon">
+            <a href="https://www.youtube.com/channel/UCy0rfWGU8hEDtTc_ETCT2iA" target="_blank">YouTube</a>
+        </div>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <nav>
+        <ul class="nav-link-footer">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <br>
+    <p>Copyright &#169; Mr. Sathanakon Bunphim</p>
+</footer>
+
+
+
+  
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
